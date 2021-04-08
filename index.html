@@ -1,0 +1,355 @@
+<html lang="ar">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/9e09d96a21.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--nav-->
+    <nav>
+        <ul class="left">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><i class="fab fa-google-plus-g"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+            <li><i class="fab fa-pinterest"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+        </ul>
+        <img src="images/lable.jpg" class="right">
+        <ul class="right">
+            <li><a href="#ContactContiner">اتصل بنا</a></li>
+            <li><a href="#orderYourMeal">اطلب وجبتك</a></li>
+            <li><a href="#">فريق العمل</a></li>
+            <li><a href="#meals">وجبات</a></li>
+            <li><a href="#services">خدمات</a></li>
+            <li><a href="#main">الرئيسية</a></li>
+        </ul>
+    </nav>
+    <div class="clear"></div>
+    <!--header-->
+    <header id="main">
+        <div>
+            <img src="images/lable2.gif">
+            <h1>لأشهى المأكولات البحرية والشعبية</h1>
+            <button>أطلب الان</button>
+        </div>
+    </header>
+    <!--meals section-->
+    <section id="meals">
+        <!--button-->
+        <div id="buttonContiner">
+            <button onclick="cardChanger('one')" id="firstButton">وجبة المطعم</button>
+            <button onclick="cardChanger('two')" id="secoundButton">وجبة الافطار</button>
+            <button onclick="cardChanger('there')" id="therdButton">وجبة الغذاء</button>
+        </div>
+        <!--card-->
+        <div>
+            <div class="cardContiner1 hidden">
+                <div class="card left" id="firstCard">
+                    <div style="background-image: url(images/1.jpg) ;" class="cardImge" id="#firstCardImge"></div>
+                    <div>
+                        <h3 class="left">$70 السعر </h3>
+                        <h3 class="right">اسم الوجبة : دجاج و بطاطا</h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                        <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                    </div>
+                </div>
+                <div class="card left" id="secoundCard">
+                    <div style="background-image: url(images/2.jpg) ;" class="cardImge" id="#secoundCardImge"></div>
+                    <div>
+                        <h3 class="left">$90 السعر </h3>
+                        <h3 class="right">اسم الوجبة : الوصفة السرية</h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                        <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;&#9733;</span></h3>
+                    </div>
+                </div>
+                <div class="card left" id="therdCard">
+                    <div style="background-image: url(images/3.jpg) ;" class="cardImge" id="#therdCardImge"></div>
+                    <div>
+                        <h3 class="left">$50 السعر </h3>
+                        <h3 class="right">اسم الوجبة : دجاج مقلي</h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                        <h3 class="left"><span id="stars">&#9733;&#9733;</span>&#9734;&#9734;</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContiner2 hidden">
+                <div class="card left" id="firstCard">
+                    <div style="background-image: url(images/4.jpg) ;" class="cardImge" id="#firstCardImge"></div>
+                    <div>
+                        <h3 class="left">$20 السعر </h3>
+                        <h3 class="right">اسم الوجبة : جبنة مقلية</h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                        <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                    </div>
+                </div>
+                <div class="card left" id="secoundCard">
+                    <div style="background-image: url(images/10.jpg) ;" class="cardImge" id="#secoundCardImge"></div>
+                    <div>
+                        <h3 class="left">$60 السعر </h3>
+                        <h3 class="right">اسم الوجبة : سمك</h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                        <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                    </div>
+                </div>
+                <div class="card left">
+                    <div style="background-image: url(images/6.jpg) ;" class="cardImge"></div>
+                    <div>
+                        <h3 class="left">$50 السعر </h3>
+                        <h3 class="right">اسم الوجبة : مشاوي تركية</h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                        <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContiner3 hidden">
+                <div class="card left">
+                    <div style="background-image: url(images/7.jpg) ;" class="cardImge"></div>
+                    <div>
+                        <h3 class="left">$90 السعر </h3>
+                        <h3 class="right">اسم الوجبة : سباغتي</h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                        <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                    </div>
+                </div>
+                <div class="card left">
+                    <div style="background-image: url(images/8.jpg) ;" class="cardImge"></div>
+                    <div>
+                        <h3 class="left">$40 السعر </h3>
+                        <h3 class="right">اسم الوجبة : صدر حبش </h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                        <h3 class="left"><span id="stars">&#9733;&#9733;</span>&#9734;&#9734;</h3>
+                    </div>
+                </div>
+                <div class="card left">
+                    <div style="background-image: url(images/9.jpg) ;" class="cardImge"></div>
+                    <div>
+                        <h3 class="left">$80 السعر </h3>
+                        <h3 class="right">اسم الوجبة : بيتزا</h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                        <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;&#9733;</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="clear"></div>
+    <section id="services">
+        <div id="continer">
+            <h1 id="servicesHeader">خدمات</h1>
+            <div class="servicesCard left">
+                <img src="images/new.gif">
+                <h1>عروض متجددة</h1>
+                <p>المطعم هو مكان تقدم فيه المأكولات والمشروبات للزبائن. تم تشغيل المطاعم في بداية الأمر على جوانب طرق
+                    السفر ليتمكن المسافرون من التوقف للراحة واستعادة حيويتهم. أما اليوم فإن المطاعم تكاد تكون في كل مكان
+                    في الشوارع الهادئة والطرق المزدحمة، وفي الفنادق والمطارات ومحطات الحافلات والقطارات، وكذلك في
+                    المتنزهات والمباني التي تضم المكاتب وفي مراكز التسوق. تشكل المطاعم الجزء الأكبر في صناعة خدمة
+                    الطعام. وتشكل المحلات التي تقدم الطعام للناس خارج بيوتهم جزءا من هذه الصناعة، بما فيها المدارس
+                    والمستشفيات والمصانع والسجون.</p>
+            </div>
+            <div class="servicesCard left">
+                <img src="images/gift.gif">
+                <h1>هدايا</h1>
+                <p>المطعم هو مكان تقدم فيه المأكولات والمشروبات للزبائن. تم تشغيل المطاعم في بداية الأمر على جوانب طرق
+                    السفر ليتمكن المسافرون من التوقف للراحة واستعادة حيويتهم. أما اليوم فإن المطاعم تكاد تكون في كل مكان
+                    في الشوارع الهادئة والطرق المزدحمة، وفي الفنادق والمطارات ومحطات الحافلات والقطارات، وكذلك في
+                    المتنزهات والمباني التي تضم المكاتب وفي مراكز التسوق. تشكل المطاعم الجزء الأكبر في صناعة خدمة
+                    الطعام. وتشكل المحلات التي تقدم الطعام للناس خارج بيوتهم جزءا من هذه الصناعة، بما فيها المدارس
+                    والمستشفيات والمصانع والسجون.</p>
+            </div>
+            <div class="servicesCard left">
+                <img src="images/delever.gif">
+                <h1>خدمة التوصيل</h1>
+                <p>المطعم هو مكان تقدم فيه المأكولات والمشروبات للزبائن. تم تشغيل المطاعم في بداية الأمر على جوانب طرق
+                    السفر ليتمكن المسافرون من التوقف للراحة واستعادة حيويتهم. أما اليوم فإن المطاعم تكاد تكون في كل مكان
+                    في الشوارع الهادئة والطرق المزدحمة، وفي الفنادق والمطارات ومحطات الحافلات والقطارات، وكذلك في
+                    المتنزهات والمباني التي تضم المكاتب وفي مراكز التسوق. تشكل المطاعم الجزء الأكبر في صناعة خدمة
+                    الطعام. وتشكل المحلات التي تقدم الطعام للناس خارج بيوتهم جزءا من هذه الصناعة، بما فيها المدارس
+                    والمستشفيات والمصانع والسجون.</p>
+            </div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <section id="orderYourMeal">
+        <div id="underLine">
+            <h1>وجبات المطعم</h1>
+        </div>
+        <div class="cardContiner">
+            <div class="card left" id="firstCard">
+                <div style="background-image: url(images/1.jpg) ;" class="cardImge" id="#firstCardImge"></div>
+                <div>
+                    <h3 class="left">$20 السعر </h3>
+                    <h3 class="right">اسم الوجبة : جبنة مقلية</h3>
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                    <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                </div>
+            </div>
+            <div class="card left" id="secoundCard">
+                <div style="background-image: url(images/2.jpg) ;" class="cardImge" id="#secoundCardImge"></div>
+                <div>
+                    <h3 class="left">$60 السعر </h3>
+                    <h3 class="right">اسم الوجبة : سمك</h3>
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                    <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                </div>
+            </div>
+            <div class="card left">
+                <div style="background-image: url(images/8.jpg) ;" class="cardImge"></div>
+                <div>
+                    <h3 class="left">$50 السعر </h3>
+                    <h3 class="right">اسم الوجبة : مشاوي تركية</h3>
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                    <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                </div>
+
+            </div>
+            <div class="card left">
+                <div style="background-image: url(images/4.jpg) ;" class="cardImge"></div>
+                <div>
+                    <h3 class="left">$20 السعر </h3>
+                    <h3 class="right">اسم الوجبة : جبنة مقلية</h3>
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                    <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                </div>
+            </div>
+            <div class="card left">
+                <div style="background-image: url(images/10.jpg) ;" class="cardImge"></div>
+                <div>
+                    <h3 class="left">$60 السعر </h3>
+                    <h3 class="right">اسم الوجبة : سمك</h3>
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                    <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                </div>
+            </div>
+            <div class="card left">
+                <div style="background-image: url(images/6.jpg) ;" class="cardImge"></div>
+                <div>
+                    <h3 class="left">$50 السعر </h3>
+                    <h3 class="right">اسم الوجبة : مشاوي تركية</h3>
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <h3 class="right">متاح <span id="Greenbull">&bull;</span></h3>
+                    <h3 class="left"><span id="stars">&#9733;&#9733;&#9733;</span>&#9734;</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <section id="map">
+        <div id="blackLine">
+            <div id="innerBlackDiv">الخريطة <i class="fa fa-map" aria-hidden="true"></i></div>
+        </div>
+        <div style="background-image: url(images/map.jpg); height: 400px; background-size:cover ;"></div>
+    </section>
+    <section id="contact">
+        <div id="redLine">
+            <div id="innerRedDiv">اتصل بنا <i class="fa fa-phone" aria-hidden="true"></i></div>
+        </div>
+        <div id="ContactContiner">
+            <div id="innerContactContiner">
+                <div class="left contactCard">
+                    <h1>ارسل رسالة الآن</h1>
+                    <input type="text" placeholder="الاسم" id="name">
+                    <p class="right" style="color: #8c1517 ; display: none;" id="nameText">الرجاء إدخال الاسم</p>
+                    <input type="email" placeholder="البريد الالكتروني" id="email1">
+                    <p class="right" style="color: #8c1517 ; display: none; " id="email1Text">الرجاء إدخال البريد</p>
+                    <textarea placeholder="الرسالة" id="msg"></textarea>
+                    <p class="right" style="color: #8c1517 ; display: none;" id="msgText">الرجاء إدخال الرسالة</p>
+                    <button onclick="send()">ارسل الآن</button>
+                </div>
+                <div class="left contactCard">
+                    <h1>روابط سريعة</h1>
+                    <p><a href="#main">الرئيسية </a> <i class="fa fa-check-circle" aria-hidden="true"
+                            style="color:#8c1517"></i></p>
+                    <p><a href="#services">خدمات </a> <i class="fa fa-check-circle" aria-hidden="true"
+                            style="color:#8c1517"></i></p>
+                    <p><a href="#meals">وجبات </a> <i class="fa fa-check-circle" aria-hidden="true"
+                            style="color:#8c1517"></i></p>
+                    <p><a href="#">فريق العمل </a> <i class="fa fa-check-circle" aria-hidden="true"
+                            style="color:#8c1517"></i></p>
+                    <p><a href="#orderYourMeal">اطلب وجبتك </a> <i class="fa fa-check-circle" aria-hidden="true"
+                            style="color:#8c1517"></i></p>
+                    <p><a href="#ContactContiner">اتصل بنا </a> <i class="fa fa-check-circle" aria-hidden="true"
+                            style="color:#8c1517"></i></p>
+                </div>
+                <div class="left contactCard">
+                    <h1>بيانات التواصل</h1>
+                    <p>abdqaddora732001@outlook.com <i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                    <p>00972 5996 76231 <i class="fa fa-mobile" aria-hidden="true"></i></p>
+                    <p>08 2053614 <i class="fa fa-phone" aria-hidden="true"></i></p>
+                    <p></p>
+                    <h1>اشترك معنا بالقائمة البريدية</h1>
+                    <input type="email" placeholder="البريد الالكتروني" id="email2">
+                    <br>
+                    <button onclick="subscribeEmail()">اشترك الآن</button>
+                    <p class="right" style="color: #8c1517 ; display: none;" id="email2Text">الرجاء إدخال البريد</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footerContiner">
+            <ul class="left">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-google-plus-g"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+                <li><i class="fab fa-pinterest"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+            <img src = "images/le.gif" class = "right">
+            <p class = "right">جميع الحقوق محفوظة 2020 </p>
+        </div>
+    </footer>
+    <script src="js/code.js"></script>
+</body>
+
+</html>

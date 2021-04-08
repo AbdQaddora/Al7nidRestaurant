@@ -1,0 +1,320 @@
+/*-------------------General style ---------------------------*/
+@font-face {
+    font-family: jannat;
+    src: url(../fonts/a-jannat-lt-bold.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: jannat;
+    transition: 0.25s ease-in-out;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+a{
+    text-decoration: none;
+    color:#7f1618;
+
+}
+
+ul{
+    list-style: none;
+}
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.blockDis{
+    display:block;
+}
+.cardContiner1 , .cardContiner2 , .cardContiner3 , .cardContiner{
+    width: 1080px;
+    margin: 0 auto;
+}
+.card{
+    width: 340px;
+    height: 280px;
+    margin: 0px 10px 50px;
+    background-color: white;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card h3{
+    width: fit-content;
+    margin: 0 10px 0px 10px;
+}
+
+#Greenbull{color:#008800; position: relative; top:3px ;}
+#stars{color : #f1a52e;}
+
+.cardImge{
+    width: 340px;
+    height: 200px;
+    background-size: cover;
+}
+/*-------------------Nav style ---------------------------*/
+nav{
+    height: 94px;
+    margin-top: 0px;
+    background-color: #d0c493;
+}
+
+nav ul{
+    margin-left:50px;
+    line-height: 94px;
+    text-align: center;
+}
+
+nav ul li , footer ul li{
+    display: inline-block;
+    cursor: pointer;;
+}
+
+nav img{
+    margin: 6px 20px 6px 0px;
+}
+nav .right li{padding: 0 20px;}
+nav .right li:hover{ background-color: #8f7e528f;}
+nav .left li{padding: 0 5px;}
+nav .left li:hover{ transform: scale(1.75) ;}
+
+/*-------------------Header style ---------------------------*/
+header{
+    height: 500px;
+    background-size: cover;
+    background-image: url(../images/img2.jpg);
+    padding-top: 6px;
+}
+
+header div{
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white;
+    height: 484px;
+    padding-top: 70px;
+    text-align: center;
+}
+
+header div img:hover{ transform: scale(1.20) }
+
+header div h1{
+    margin-top: 20px;
+    color: white;
+    text-shadow: 2px 2px 15px black;
+    font-size: 30pt;
+}
+
+header div button{
+    background-color: #ed3832;
+    color: white;
+    line-height: normal;
+    padding: 3px 50px 0px;
+    font-size: 15pt;
+    border-radius: 14px;
+    border: 2px solid  #ed3832;
+    outline: none;
+    cursor: pointer;
+}
+header div button:hover{
+    transition: 0.15s ease-in-out;
+    border: 2px solid white;
+}
+/*-------------------Meals style ---------------------------*/
+#buttonContiner{
+    text-align: center;
+    padding: 30px;
+}
+
+#buttonContiner button{
+    padding: 30px 50px 26px;
+    margin: 0px ;
+    background-color: #00000000;
+    font-size: 15pt;
+    color: #333333;
+    border: 0px solid;
+    border-bottom:2px solid #dddddd;
+    outline: none;
+    cursor: pointer;
+}
+
+/*-------------------services style ---------------------------*/
+#services{
+    height: 645px;
+    background-image: url(../images/5.jpg);
+    background-size: cover;
+}
+
+#continer{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.servicesCard{
+    width: 31.3333%;
+    text-align: center;
+    margin:50px 1% ;
+}
+#continer h1{
+    color: white;
+    text-align: center;
+}
+
+#servicesHeader{
+    padding-top: 80px;
+}
+.servicesCard p{
+    color: white;
+    text-align: center;
+}
+
+/*-------------------orderYourMeal style ---------------------------*/
+#underLine{
+    height: 76px;
+    width: 1140px;
+    margin: 20px auto 50px;
+    border-bottom:2px solid #cccccc ;
+}
+#underLine h1{
+    padding: 14px;
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 3px solid #111111;
+}
+/*-------------------map style ---------------------------*/
+#map{
+    margin-top: 50px;
+}
+#blackLine{
+    width: 100%;
+    height: 20px;
+    background-color: #232323;
+    position: relative;
+}
+#innerBlackDiv{
+    background-color: #232323;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding: 9px 30px;
+    position: absolute;
+    word-spacing: 5px;
+    top:-50px;
+    left: 20px;
+}
+/*-------------------contact style ---------------------------*/
+#redLine{
+    width: 100%;
+    height: 20px;
+    background-color: #821517;
+    position: relative;
+}
+#innerRedDiv{
+    background-color: #821517;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding: 9px 30px;
+    position: absolute;
+    word-spacing: 5px;
+    top:20px;
+    right: 20px;
+}
+
+#ContactContiner{
+    width: 100%;
+    height: 582px;
+    padding-top:133px ;
+    background-color: #d0c493;
+}
+
+#innerContactContiner{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.contactCard{
+    padding: 0px 35px;
+    margin:0 1% 0 0 ;
+    max-width: 43%;
+}
+
+.contactCard h1{
+    color: #8c1517;
+    text-align: right;  
+    margin: 25px 0px;
+}
+
+.contactCard p{
+    color: #111111;
+    font-size: 12pt;
+    text-align: right;
+    margin: 20px 0px;
+} 
+
+.contactCard a{
+    color: #111111;
+}
+.contactCard p{
+    background-color:  #d0c493;
+}
+.contactCard button{
+    height: 40px;
+    margin-top: 15px;
+    line-height: 40px;
+    background-color: #821517;
+    color: white;
+    padding: 0px 24px;
+    outline: none;
+    border: 0px;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+.contactCard input ,.contactCard textarea{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    line-height: 50px;
+    border: 0px;
+    text-align: right;
+    padding-right:15px ;
+    border-radius: 7px;
+    outline: none;
+}
+
+.contactCard textarea{
+    height: 150px;
+}
+/*-------------------footer style ---------------------------*/
+footer{
+    background-color: #8f7e52;
+    height: 125px;
+    line-height: 125px;
+    text-align: center;
+}
+
+#footerContiner{
+    width: 1040px;
+    margin: 0 auto;
+}
+
+footer img{
+    margin: 22px 20px 0px;
+}
