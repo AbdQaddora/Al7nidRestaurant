@@ -1,6 +1,6 @@
-
+let displayType = "none";
 cardChanger("two");
-function cardChanger(x){
+function cardChanger(x) {
     var cardGroub1 = document.querySelector(".cardContiner1");
     var cardGroub2 = document.querySelector(".cardContiner2");
     var cardGroub3 = document.querySelector(".cardContiner3");
@@ -41,75 +41,106 @@ function buttonColorChanger(x) {
     }
 }
 
-function send(){
+function send() {
     var name = document.getElementById("name").value;
     var email1 = document.getElementById("email1").value;
     var msg = document.getElementById("msg").value;
     var nameText = document.getElementById("nameText");
     var email1Text = document.getElementById("email1Text");
     var msgText = document.getElementById("msgText");
-    if(name.length == 0){
+    if (name.length == 0) {
         nameText.style.display = 'block';
-    }else{
+    } else {
         nameText.style.display = 'none';
     }
 
-    if(email1.length == 0){
+    if (email1.length == 0) {
         email1Text.style.display = 'block';
-    }else{
+    } else {
         email1Text.style.display = 'none';
     }
 
-    if(msg.length == 0){
+    if (msg.length == 0) {
         msgText.style.display = 'block';
-    }else{
+    } else {
         msgText.style.display = 'none';
     }
-    expansion(name , email1 , msg);
+    expansion(name, email1, msg);
 }
 
-function expansion(name , email1 , msg){
+function expansion(name, email1, msg) {
     var back = document.getElementById("ContactContiner");
     var nameText = document.getElementById("nameText");
     var email1Text = document.getElementById("email1Text");
     var msgText = document.getElementById("msgText");
     var counter = 0;
-    if(nameText.style.display == 'block'){
+    if (nameText.style.display == 'block') {
         counter++;
     }
-    if(email1Text.style.display == 'block'){
+    if (email1Text.style.display == 'block') {
         counter++;
     }
-    if(msgText.style.display == 'block'){
+    if (msgText.style.display == 'block') {
         counter++;
     }
 
-    if(counter == 1){
-        back.style.height = '582px';
-    }else if(counter == 2){
-        back.style.height = '650px';
-    }else if(counter == 3){
-        back.style.height = '730px';
-    }else{
-        back.style.height = '582px';
-        if(window.confirm("سيتم ارسال الرسالة بالبيانات التالية \n الاسم "+name+"\nالبريد الاكتلاوني "+email1+"\nالرسالة "+msg)){
-            window.alert("تم ارسال الرسالة")
-            document.getElementById('name').value = '';
-            document.getElementById('email1').value = '';
-            document.getElementById('msg').value = '';
+
+
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
+    if (mediaQuery.matches) {
+        if (counter == 1) {
+            back.style.minHeight = back.style.height;
+        } else if (counter == 2) {
+            back.style.height = '1035px';
+        } else if (counter == 3) {
+            back.style.height = '1000px';
+        } else {
+            back.style.minHeight = back.style.height;
+            if (window.confirm("سيتم ارسال الرسالة بالبيانات التالية \n الاسم " + name + "\nالبريد الاكتلاوني " + email1 + "\nالرسالة " + msg)) {
+                window.alert("تم ارسال الرسالة")
+                document.getElementById('name').value = '';
+                document.getElementById('email1').value = '';
+                document.getElementById('msg').value = '';
+            }
+        }
+    } else {
+        if (counter == 1) {
+            back.style.height = '582px';
+        } else if (counter == 2) {
+            back.style.height = '650px';
+        } else if (counter == 3) {
+            back.style.height = '730px';
+        } else {
+            back.style.height = '582px';
+            if (window.confirm("سيتم ارسال الرسالة بالبيانات التالية \n الاسم " + name + "\nالبريد الاكتلاوني " + email1 + "\nالرسالة " + msg)) {
+                window.alert("تم ارسال الرسالة")
+                document.getElementById('name').value = '';
+                document.getElementById('email1').value = '';
+                document.getElementById('msg').value = '';
+            }
         }
     }
 
 }
 
-function subscribeEmail(){
+function subscribeEmail() {
     var email2 = document.getElementById("email2").value;
     var email1Text = document.getElementById("email2Text");
-    if(email2.length == 0){
+    if (email2.length == 0) {
         email1Text.style.display = 'block';
-    }else{
+    } else {
         email1Text.style.display = 'none';
-        window.alert("تم اشتراكك بالايميل  \n"+email2);
+        window.alert("تم اشتراكك بالايميل  \n" + email2);
         document.getElementById('email2').value = '';
     }
-} 
+}
+
+function showMobileList() {
+    if (displayType == "block") {
+        document.querySelector(".mobileList").style = "display:none;"
+        displayType = "none";
+    } else {
+        document.querySelector(".mobileList").style = "display:block;"
+        displayType = "block";
+    }
+}

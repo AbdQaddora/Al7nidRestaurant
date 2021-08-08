@@ -49,7 +49,7 @@ ul{
 }
 .card{
     width: 340px;
-    height: 280px;
+    min-height: 280px;
     margin: 0px 10px 50px;
     background-color: white;
     overflow: hidden;
@@ -77,6 +77,10 @@ nav{
     background-color: #d0c493;
 }
 
+.mobileList , .mobile , .mobileListButton{
+    display: none;
+}
+
 nav ul{
     margin-left:50px;
     line-height: 94px;
@@ -98,7 +102,7 @@ nav .left li:hover{ transform: scale(1.75) ;}
 
 /*-------------------Header style ---------------------------*/
 header{
-    height: 500px;
+    height: calc(100vh - 94px);
     background-size: cover;
     background-image: url(../images/img2.jpg);
     padding-top: 6px;
@@ -107,7 +111,7 @@ header{
 header div{
     border-top: 2px dashed white;
     border-bottom: 2px dashed white;
-    height: 484px;
+    height: calc(100vh - 106px);
     padding-top: 70px;
     text-align: center;
 }
@@ -144,8 +148,7 @@ header div button:hover{
 
 #buttonContiner button{
     padding: 30px 50px 26px;
-    margin: 0px ;
-    background-color: #00000000;
+    margin: 0px;
     font-size: 15pt;
     color: #333333;
     border: 0px solid;
@@ -156,7 +159,7 @@ header div button:hover{
 
 /*-------------------services style ---------------------------*/
 #services{
-    height: 645px;
+    min-height: 645px;
     background-image: url(../images/5.jpg);
     background-size: cover;
 }
@@ -187,7 +190,7 @@ header div button:hover{
 /*-------------------orderYourMeal style ---------------------------*/
 #underLine{
     height: 76px;
-    width: 1140px;
+    width: 85%;
     margin: 20px auto 50px;
     border-bottom:2px solid #cccccc ;
 }
@@ -225,6 +228,7 @@ header div button:hover{
     background-color: #821517;
     position: relative;
 }
+
 #innerRedDiv{
     background-color: #821517;
     color: white;
@@ -239,7 +243,7 @@ header div button:hover{
 
 #ContactContiner{
     width: 100%;
-    height: 582px;
+    min-height: 582px;
     padding-top:133px ;
     background-color: #d0c493;
 }
@@ -305,7 +309,7 @@ header div button:hover{
 /*-------------------footer style ---------------------------*/
 footer{
     background-color: #8f7e52;
-    height: 125px;
+    min-height: 125px;
     line-height: 125px;
     text-align: center;
 }
